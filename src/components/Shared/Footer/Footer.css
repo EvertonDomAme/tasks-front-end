@@ -1,0 +1,12 @@
+.footer {
+  position:fixed;
+  overflow:hidden;
+  bottom:0;
+  width:100%;
+  height: 46px;
+  background-color: #010B02;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: aliceblue;
+}

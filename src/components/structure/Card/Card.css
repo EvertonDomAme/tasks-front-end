@@ -1,0 +1,72 @@
+.card {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  height: 200px;
+  list-style: none;
+  background: #283048;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 25px;
+  box-shadow: rgba(22, 239, 255, 0.946) 0px 25px 20px -20px;
+
+  }
+
+.cardLink {
+  color: rgb(0, 255, 0);
+}
+.cardBody {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card h5 {
+  font-size: 2em;
+}
+
+.card h6 {
+  font-size: .7em;
+}
+
+.cardSpan {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-size:1em;
+}
+
+.cardPrio{
+  text-align: center;
+  padding: 12px;
+  width: 100px;
+  margin: 8px;
+  background-color: black;
+  color: aqua;
+  border-radius: 15px;
+}
+
+.cardStatus {
+  text-align: center;
+  width: 100px;
+  padding: 12px;
+  margin: 8px;
+  background-color: black;
+  color: chartreuse;
+  border-radius: 15px;
+}
+
+.cardDline {
+  text-align: center;
+  width: 100px;
+  padding: 12px;
+  margin: 8px;
+  background-color: black;
+  color:tomato;
+  border-radius: 15px;
+}

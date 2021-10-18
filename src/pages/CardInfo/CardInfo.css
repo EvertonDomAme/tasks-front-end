@@ -1,0 +1,29 @@
+.cardInfoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cardInfoTxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 6rem;
+  bottom: 46px;
+  position:absolute;
+  background-color: grey;
+  width: 100%;
+  height: 6%;
+}
+
+.infoContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position:absolute;
+  top: 10rem;
+  bottom: 46px;
+}
+
