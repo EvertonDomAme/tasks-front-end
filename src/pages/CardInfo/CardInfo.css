@@ -70,7 +70,7 @@
 }
 
 .descriptionInfo {
-  margin: 1em;
+  margin: .5em;
   font-size: 1em;
   word-break:break-all;
 }
@@ -118,12 +118,12 @@
   flex-wrap: wrap;
   padding: 10px;
   font-size: 1em;
-  margin: 1em;
+  margin: .5em;
 }
 
 /* SadHappy checking */
 .checkboxLabel {
-  margin: 1em;
+  margin: .5em;
   position: relative;
   width: 80px;
   height: 40px;
