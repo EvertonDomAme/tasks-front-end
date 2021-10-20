@@ -1,29 +1,205 @@
+
+
 .cardInfoContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
+  
 }
 
 .cardInfoTxt {
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 6rem;
+  top: 8rem;
   bottom: 46px;
-  position:absolute;
-  background-color: grey;
+  position: absolute;
+  z-index: 1;
+  color: #283048; /* fallback for old browsers */
+  color: -webkit-linear-gradient(
+    to right,
+    #859398,
+    #283048
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(
+    to right,
+    #859398,
+    #283048
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 25px;
+  box-shadow: rgba(22, 239, 255, 0.946) 0px 25px 20px -20px;
   width: 100%;
   height: 6%;
 }
 
-.infoContent {
+.infoTxt {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.infoContent {
+  background: #283048; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #859398,
+    #283048
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #859398,
+    #283048
+  );
+  display: flex;
+  width: 60%;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   position:absolute;
-  top: 10rem;
-  bottom: 46px;
+  top: 12rem;
+  bottom: 86px;
+  border-radius: 15px;
 }
 
+.titleInfo {
+  font-size: 2em;
+}
+
+.descriptionInfo {
+  margin: 1em;
+  font-size: 1em;
+  word-break:break-all;
+}
+
+.priorityInfo {
+  text-align: center;
+  padding: 12px;
+  width: 100px;
+  margin: 8px;
+  background-color: black;
+  color: aqua;
+  border-radius: 15px;
+}
+
+.statusInfo {
+  text-align: center;
+  width: 100px;
+  padding: 12px;
+  margin: 8px;
+  background-color: black;
+  color: chartreuse;
+  border-radius: 15px;
+}
+
+.deadlineInfo {
+  text-align: center;
+  width: 100px;
+  padding: 12px;
+  margin: 8px;
+  background-color: black;
+  color: tomato;
+  border-radius: 15px;
+}
+
+.infoContent h5 {
+  align-items: center;
+  justify-content:flex-start ;
+  bottom: 0;
+  display: flex;
+
+}
+
+.infoSpan  {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-size: 1em;
+  margin: 1em;
+}
+
+/* SadHappy checking */
+.checkboxLabel {
+  margin: 1em;
+  position: relative;
+  width: 80px;
+  height: 40px;
+}
+
+.checkboxInput {
+  position: relative;
+  z-index: 1;
+  appearance: none;
+}
+
+.checkboxSpan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fe0000;
+  border-radius: 840px;
+  transition: 0.5s;
+  box-shadow: 0 7.5px 12.5px #fe000066;
+}
+
+.checkboxLabel input:checked ~ span {
+  background: #05be05;
+  box-shadow: 0 7.5px 12.5px #05be0566;
+}
+
+.checkboxSpan i {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.checkboxLabel input:checked ~ span i {
+  left: 42px;
+}
+.checkboxLabel input:checked ~ span i::before {
+  background-color: #05be05;
+  box-shadow: 17.5px 0 0 #05be05;
+}
+.checkboxSpan i::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fe0000;
+  box-shadow: 17.5px 0 0 #fe0000;
+  transition: 0.5s;
+}
+
+.checkboxSpan i::after {
+  content: "";
+  position: absolute;
+  bottom: 7.5px;
+  left: calc(50% - 7.5px);
+  width: 15px;
+  height: 3px;
+  border-radius: 3px;
+  background: #fe0000;
+  transition: 0.5s;
+}
+
+.checkboxLabel input:checked ~ span i::after {
+  bottom: 6px;
+  height: 7.5px;
+  border-radius: 0;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+  background: #05be05;
+}

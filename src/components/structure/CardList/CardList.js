@@ -10,11 +10,11 @@ const CardList = () => {
     getTodo();
   }, []);
 
-  const getTodo = async () => {
+  async function getTodo() {
     const response = await Api.fetchGetAll();
     const data = await response.json();
     setTodo(data);
-  };
+  }
 
   return (
     <div className="cardListContainer">

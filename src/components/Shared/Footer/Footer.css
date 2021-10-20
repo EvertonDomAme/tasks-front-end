@@ -4,9 +4,14 @@
   bottom:0;
   width:100%;
   height: 46px;
-  background-color: #010B02;
   justify-content: center;
   align-items: center;
   display: flex;
-  color: aliceblue;
+  color: rgb(1, 255, 1);
+  box-shadow: rgba(117, 229, 233, 0.871) 15px -5px 27px 0px, rgba(117, 229, 233, 0.871) 0px 8px 16px -8px;
+  background: #BBD2C5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }

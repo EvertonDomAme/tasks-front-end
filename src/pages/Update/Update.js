@@ -45,7 +45,7 @@ const Update = (props) => {
   return (
     <div className="updtContent">
       <div className="updtTitle">
-        <h3>To-Do update box</h3>
+        <h1>Task Update box</h1>
       </div>
       <div className="updtBody">
         <form onSubmit={handleSubmit}>
@@ -66,52 +66,54 @@ const Update = (props) => {
             <textarea
               type="text"
               value={todo.description}
-              className="form-control"
+              className="form-control descriptionForm"
               name="description"
               id="floatingInput"
               placeholder="Enter To-Do description"
               onChange={handleFieldsChange}
             />
           </div>
-          <div className="form">
-          <label htmlFor="floatingPriority">Priority</label>
-            <select
-              value={todo.priority}
-              className="form-control"
-              name="priority"
-              id="floatingPriority"
-              onChange={handleFieldsChange}
-            >
-              <option value="low">Low</option>
-              <option value="medium">Medium</option>
-              <option value="high">High</option>
-            </select>
-          </div>
-          <div className="form">
-          <label htmlFor="floatingStatus">Status</label>
-            <select
-              value={todo.status}
-              className="form-control"
-              name="status"
-              id="floatingStatus"
-              onChange={handleFieldsChange}
-            >
-              <option value="to-do">To-do</option>
-              <option value="inProgress">In Progress</option>
-              <option value="accomplished">Accomplished</option>
-            </select>
-          </div>
-          <div className="form">
-          <label htmlFor="floatingDeadline">Deadline</label>
-            <input
-              type="date"
-              value={todo.deadline}
-              pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}"
-              className="form-control"
-              name="deadline"
-              id="floatingDeadline"
-              onChange={handleFieldsChange}
-            />
+          <div className="selectBox">
+            <div className="form">
+            <label htmlFor="floatingPriority">Priority</label>
+              <select
+                value={todo.priority}
+                className="form-control"
+                name="priority"
+                id="floatingPriority"
+                onChange={handleFieldsChange}
+              >
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+            </div>
+            <div className="form">
+            <label htmlFor="floatingStatus">Status</label>
+              <select
+                value={todo.status}
+                className="form-control"
+                name="status"
+                id="floatingStatus"
+                onChange={handleFieldsChange}
+              >
+                <option value="To-do">To-do</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Accomplished">Accomplished</option>
+              </select>
+            </div>
+            <div className="form">
+            <label htmlFor="floatingDeadline">Deadline</label>
+              <input
+                type="date"
+                value={todo.deadline}
+                pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}"
+                className="form-control"
+                name="deadline"
+                id="floatingDeadline"
+                onChange={handleFieldsChange}
+              />
+            </div>
           </div>
           <div className="submitBtn">
             <button type="submit" className="btnSubmit">

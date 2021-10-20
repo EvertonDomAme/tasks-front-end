@@ -51,42 +51,44 @@ const Register = (props) => {
           <label htmlFor="floatingInput">Description</label>
             <textarea
               type="text"
-              className="form-control"
+              className="form-control descriptionForm"
               name="description"
               id="floatingInput"
               placeholder="Enter To-Do description"
             />
           </div>
-          <div className="form">
-          <label htmlFor="floatingPriority">Priority</label>
-            <select
-              className="form-control"
-              name="priority"
-              id="floatingPriority"
-            >
-              <option value="low">Low</option>
-              <option value="medium">Medium</option>
-              <option value="high">High</option>
-            </select>
-          </div>
-          <div className="form">
-          <label htmlFor="floatingStatus">Status</label>
-            <select className="form-control" name="status" id="floatingStatus">
-              <option value="to-do">To-do</option>
-              <option value="inProgress">In Progress</option>
-              <option value="accomplished">Accomplished</option>
-            </select>
-          </div>
-          <div className="form">
-          <label htmlFor="floatingDeadline">Deadline</label>
-            <input
-              pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}"
-              type="date"
-              length="10"
-              className="form-control"
-              name="deadline"
-              id="floatingDeadline"
-            />
+          <div className="selectBox">
+            <div className="form">
+            <label htmlFor="floatingPriority">Priority</label>
+              <select
+                className="form-control"
+                name="priority"
+                id="floatingPriority"
+              >
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+            </div>
+            <div className="form">
+            <label htmlFor="floatingStatus">Status</label>
+              <select className="form-control" name="status" id="floatingStatus">
+                <option value="To-do">To-do</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Accomplished">Accomplished</option>
+              </select>
+            </div>
+            <div className="form">
+            <label htmlFor="floatingDeadline">Deadline</label>
+              <input
+                pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}"
+                type="date"
+                length="10"
+                className="form-control"
+                name="deadline"
+                id="floatingDeadline"
+              />
+            </div>
           </div>
           <div className="submitBtn">
             <button type="submit" className="btnSubmit">

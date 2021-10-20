@@ -35,12 +35,22 @@ const CardInfo = (props) => {
     <div className="cardInfoContainer">
       <h1 className="cardInfoTxt">Task information</h1>
       <div className="infoContent">
-        <h2 className="titleInfo">{todo.title}</h2>
-        <h3 className="descriptionInfo">{todo.description}</h3>
+        <div className="infoTxt">
+          <h3 className="titleInfo">{todo.title}</h3>
+          <h4 className="descriptionInfo">{todo.description}</h4>
+        </div>
+        <div className="infoSpan">
         <span className="priorityInfo">{todo.priority}</span>
         <span className="statusInfo">{todo.status}</span>
         <span className="deadlineInfo">{todo.deadline}</span>
+        </div>
         <h5 className="birthInfo">{todo.birthdate}</h5>
+        <label className="checkboxLabel">
+          <input className="checkboxInput" type="checkbox" />
+          <span className="checkboxSpan">
+            <i></i>
+          </span>
+        </label>
         <div className="editBtn">
           <Link to={`/update/${todo._id}`} className="updtBtn">
             Update
