@@ -51,11 +51,11 @@ const CardInfo = (props) => {
             <i></i>
           </span>
         </label>
-        <div className="editBtn">
+        <div className="updateBtn">
           <Link to={`/update/${todo._id}`} className="updtBtn">
             Update
           </Link>
-          <button className="updtButton" onClick={onOpenModal}>
+          <button className="delButton" onClick={onOpenModal}>
             Delete
           </button>
         </div>

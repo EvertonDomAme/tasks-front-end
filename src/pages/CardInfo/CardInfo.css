@@ -1,16 +1,11 @@
-
-
 .cardInfoContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
-  
 }
 
 .cardInfoTxt {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,17 +44,13 @@
     #859398,
     #283048
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #859398,
-    #283048
-  );
+  background: linear-gradient(to right, #859398, #283048);
   display: flex;
   width: 60%;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  position:absolute;
+  position: absolute;
   top: 12rem;
   bottom: 86px;
   border-radius: 15px;
@@ -70,9 +61,9 @@
 }
 
 .descriptionInfo {
-  margin: .5em;
+  margin: 0.5em;
   font-size: 1em;
-  word-break:break-all;
+  word-break: break-all;
 }
 
 .priorityInfo {
@@ -88,8 +79,8 @@
 .statusInfo {
   text-align: center;
   width: 100px;
-  padding: 12px;
-  margin: 8px;
+  padding: 10px;
+  margin: 6px;
   background-color: black;
   color: chartreuse;
   border-radius: 15px;
@@ -98,32 +89,56 @@
 .deadlineInfo {
   text-align: center;
   width: 100px;
-  padding: 12px;
-  margin: 8px;
+  padding: 10px;
+  margin: 6px;
   background-color: black;
   color: tomato;
   border-radius: 15px;
 }
 
-.infoContent h5 {
-  align-items: center;
-  justify-content:flex-start ;
-  bottom: 0;
+.updateBtn {
   display: flex;
-
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
-.infoSpan  {
+.updtBtn{
+  background-color: rgba(22, 239, 255, 0.946);
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 15px;
+  font-size:1em;
+  font-weight: bold;
+
+}
+.delButton {
+  background-color: rgba(0, 255, 30, 0.946);
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 15px;
+  font-size:1em;
+  font-weight: bold;
+}
+
+.infoContent h5 {
+  align-items: center;
+  justify-content: flex-start;
+  bottom: 0;
+  display: flex;
+}
+
+.infoSpan {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
   font-size: 1em;
-  margin: .5em;
+  margin: 0.5em;
 }
 
 /* SadHappy checking */
 .checkboxLabel {
-  margin: .5em;
+  margin: 0.5em;
   position: relative;
   width: 80px;
   height: 40px;
