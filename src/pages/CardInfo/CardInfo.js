@@ -15,7 +15,7 @@ const CardInfo = (props) => {
 
   useEffect(() => {
     getTodoById();
-  });
+  }, []);
 
   const getTodoById = async () => {
     const response = await Api.fetchGetById(_id);

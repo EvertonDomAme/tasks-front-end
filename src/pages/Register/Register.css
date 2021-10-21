@@ -13,17 +13,7 @@
   bottom: 46px;
   position: absolute;
   z-index: 1;
-  color: #283048; /* fallback for old browsers */
-  color: -webkit-linear-gradient(
-    to right,
-    #859398,
-    #283048
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  color: linear-gradient(
-    to right,
-    #859398,
-    #283048
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
   border-radius: 25px;
   box-shadow: rgba(22, 239, 255, 0.946) 0px 25px 20px -20px;
   width: 100%;
@@ -31,6 +21,11 @@
 }
 
 .registerBody {
+  color: #fff;
+  top: 8rem;
+  bottom: 46px;
+  position: absolute;
+  overflow: auto;
   display: flex;
   justify-content: center;
   align-items: center;
